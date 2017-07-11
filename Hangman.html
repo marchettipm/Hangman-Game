@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+	<html lang="en=us">
+	<html>
+
+<head>
+	  <meta charset="UTF-8">
+	  <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+	  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Hangman, Son!</title>
+	<style>
+		body{
+			background-color: orange;
+		}
+		#blanks li, #wrong li
+	{
+		display: inline-block;
+
+	}
+	</style>
+</head>
+	
+
+
+<body>
+	<div style="display: inline-block; margin: 200px 0 0 300px;"> 
+	<h1>Vegas Hangman</h1>
+		<h3 id="begin">Press start to begin!</h3>
+	
+	<div>
+		<h3>Your Word</h3>
+		<ul id="blanks"></ul>	
+
+	</div>
+
+	<div>
+		<h3>Guessed Letters</h3>
+		<ul id="wrong"></ul>
+
+	</div>
+
+	<div>
+		<h4 id="winner">Wins: 0</h4>
+		<h4 id="loser">Losses: 0</h4>
+	</div>
+
+
+
+
+	</div>
+
+	  	  <script src= "assets/javascript/game.js"></script>
+</body>
+
+	</html>
