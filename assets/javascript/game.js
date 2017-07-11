@@ -8,6 +8,10 @@ var  blankspot = "";
 var  blanky = "<li>__&nbsp;</li>";
 var  removeCorrectGuesses = "";
 
+function playReset(){
+	hangman.wordChoice
+}
+
 
 hangman = {
 	startText : "Let's do this thing! Guess a letter",
@@ -32,7 +36,7 @@ document.onkeyup = function(event){
 
 		wordChosen = hangman.wordChoice();
 		removeCorrectGuesses = wordChosen;
-		alert(wordChosen);
+		// alert(wordChosen);
 
 		for (var i = 0; i < wordChosen.length; i++){
 				blankspot += blanky;
@@ -57,6 +61,17 @@ document.onkeyup = function(event){
 		    if (removeCorrectGuesses.length === 0){
 		    	wins += 1;
 		    	document.getElementById("winner").innerHTML = "Wins: " + wins;
+		    	wrongspot = "";
+		    	guesses = 8;
+		    	document.getElementById("wrong").innerHTML = "";
+		    	wordChosen = hangman.wordChoice();
+		    	removeCorrectGuesses = wordChosen;
+		    	blankspot = "";
+		    	for (var i = 0; i < wordChosen.length; i++){
+					blankspot += blanky;
+	 			}	
+				document.getElementById("blanks").innerHTML = blankspot;
+		    	// alert(wordChosen);
 		    }
 		} else {
 			wrongspot += "<li>" + event.key + ", </li>";
@@ -65,6 +80,16 @@ document.onkeyup = function(event){
 		    if (guesses === 0){
 		    	losses += 1;
 		    	document.getElementById("loser").innerHTML = "Losses: " + losses;
+		    	wrongspot = "";
+		    	guesses = 8;
+		    	document.getElementById("wrong").innerHTML = "";
+		    	wordChosen = hangman.wordChoice();
+		    	removeCorrectGuesses = wordChosen;
+		    	blankspot = "";
+		    	for (var i = 0; i < wordChosen.length; i++){
+					blankspot += blanky;
+	 			}	
+				document.getElementById("blanks").innerHTML = blankspot;
 		    }
 		   
 		    		
