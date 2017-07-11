@@ -14,7 +14,7 @@ function playReset(){
 
 
 hangman = {
-	startText : "Let's do this thing! Guess a letter",
+	startText : "Let's do this thing! Guess a letter!",
 	wordBank : ["blackjack", "poker", "bellagio", "palms", 
 		"slots,", "elvis", "caesers", "luxor", "roulette", "baccarat"],
 	wordChoice: function (){

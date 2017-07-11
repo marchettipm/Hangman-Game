@@ -1,0 +1,50 @@
+html{
+	height: 100%
+}
+
+body{
+	background-image: url(https://30btc.com/wp-content/uploads/2017/04/Vegas-Vacation.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.titleline {
+	/*background-color: white;*/
+	color: yellow;
+	font-size: 90px;
+	margin: 125px 700px 0 0;
+	text-align: center;
+	font-family: 'Luckiest Guy', cursive;
+
+}
+
+
+.wrapper {
+	display: inline-block; 
+	background-color: #e6e600;
+	padding: 25px 75px 25px 75px;
+	float: right;
+	margin: 75px 100px 0px 0;
+	border-radius: 25px;
+	font-family: 'Righteous', cursive;
+	font-size: 20px;
+}
+
+.vegashangman li {
+	display: inline-block;
+}
+
+.vegashangman img {
+	height: 60px;
+	width: 60px;
+}
+
+.vegashangman ul:nth-child(0){
+	margin-right: 20px;
+	background-color: orange;
+}
+
+.begin {
+	font-size: 35px;
+}
